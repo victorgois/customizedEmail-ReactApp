@@ -3,13 +3,10 @@ import {getAuth} from 'firebase/auth'
 
 // Firebase configurations
 const firebaseConfig = {
-  apiKey: "AIzaSyC86631nbR9vV25_UT5xLq8XOYHT3bQ0Do",
-  authDomain: "pocagathaloginsms.firebaseapp.com",
-  projectId: "pocagathaloginsms",
-  storageBucket: "pocagathaloginsms.appspot.com",
-  messagingSenderId: "587368615561",
-  appId: "1:587368615561:web:cddeb9f2fa31d3df578058",
-  measurementId: "G-JE5X62Q6V0"
+  apiKey: process.env.REACT_APP_APIKEY,
+  authDomain: process.env.REACT_APP_AUTHDOMAIN,
+  projectId: process.env.REACT_APP_PROJECTID,
+  appId: process.env.REACT_APP_APPID
 };
 
 // Initialize Firebase and Firebase Authentication
